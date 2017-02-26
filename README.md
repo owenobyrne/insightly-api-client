@@ -70,6 +70,10 @@ public class ActivitySetsApiExample {
 
     public static void main(String[] args) {
         
+        ApiClient apiClient = new ApiClient();
+		apiClient.setUsername("<YOUR-API-KEY>");
+		apiClient.setDateFormat(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
+		
         ActivitySetsApi apiInstance = new ActivitySetsApi();
         Long id = 789L; // Long | An Activity Set's ID
         try {
